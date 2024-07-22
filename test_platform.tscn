@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvgsxdhf6h23h"]
+
+[ext_resource type="Texture2D" uid="uid://bltdvvmp6dk1x" path="res://Sprites/Test sprites/Test terrain.png" id="1_bl4bx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryoip"]
+size = Vector2(78, 77)
+
+[node name="TestPlatform" type="StaticBody2D"]
+
+[node name="TestTerrain" type="Sprite2D" parent="."]
+texture = ExtResource("1_bl4bx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1.5)
+shape = SubResource("RectangleShape2D_ryoip")

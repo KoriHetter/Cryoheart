@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds1tl85weyfv6"]
+
+[ext_resource type="Texture2D" uid="uid://dslk0p2jc23yt" path="res://Sprites/Alpha sprites/Steel beam-export.png" id="1_58d4p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rk4b4"]
+size = Vector2(159, 75)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="SteelBeam-export" type="Sprite2D" parent="."]
+texture = ExtResource("1_58d4p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -2.5)
+shape = SubResource("RectangleShape2D_rk4b4")
