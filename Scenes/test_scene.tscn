@@ -1,33 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://mi3oo743f3t6"]
 
-[ext_resource type="PackedScene" uid="uid://dsn875k0jp1h" path="res://player.tscn" id="1_0rdvr"]
-[ext_resource type="PackedScene" uid="uid://ds1tl85weyfv6" path="res://Steel beam.tscn" id="2_cmst1"]
+[ext_resource type="PackedScene" uid="uid://dsn875k0jp1h" path="res://Scenes/player.tscn" id="1_0rdvr"]
+[ext_resource type="PackedScene" uid="uid://ds1tl85weyfv6" path="res://Scenes/Steel beam.tscn" id="2_cmst1"]
 
 [node name="TestScene" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_0rdvr")]
-position = Vector2(88, 352)
-
 [node name="StaticBody2D" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(80, 592)
+position = Vector2(423, 601)
 
-[node name="StaticBody2D2" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(224, 592)
-
-[node name="StaticBody2D3" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(368, 592)
-
-[node name="StaticBody2D4" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(512, 592)
-
-[node name="StaticBody2D5" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(656, 592)
-
-[node name="StaticBody2D6" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(800, 592)
-
-[node name="StaticBody2D7" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(944, 592)
-
-[node name="StaticBody2D8" parent="." instance=ExtResource("2_cmst1")]
-position = Vector2(1088, 592)
+[node name="Player" parent="." instance=ExtResource("1_0rdvr")]
+position = Vector2(400, 390)
